@@ -1,0 +1,10 @@
+.navbar-brand{
+    color: chartreuse;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: 10px solid gold;
+    box-shadow: none;
+}
