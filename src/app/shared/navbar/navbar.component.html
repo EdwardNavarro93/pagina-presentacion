@@ -1,22 +1,23 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-dark bg-transparent">
     <div class="container">
         <a class="navbar-brand" href="#">{{title}}</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!--boton responsive que se desplega en tamaño movil-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+        <!--icono por defecto del boton-->
         <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">            
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/home" [routerLinkActive]="'class1'">{{items[0]}}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/portfolio" [routerLinkActive]="'class1'">{{items[1]}}</a>
-            </li>
-            <li class="nav-item">
-                <a  class="nav-link" routerLink="/contact" [routerLinkActive]="'class1'">{{items[2]}}</a>
-            </li>
-        </ul>
-
+        <div class="collapse navbar-collapse" id="navbarNav"> 
+            <ul class="navbar-nav ml-auto">            
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/home" [routerLinkActive]="'class1'">{{items[0]}}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/portfolio" [routerLinkActive]="'class1'">{{items[1]}}</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link" routerLink="/contact" [routerLinkActive]="'class1'">{{items[2]}}</a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>

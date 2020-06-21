@@ -1,0 +1,94 @@
+/*estilos del encabezado principal de la pagina*/
+.page-header{
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+}
+
+/*estilos del contenedor del titulo principal*/
+.title-brand,
+.description-subtitle
+{
+    text-align: center;
+}
+
+.title-brand{
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+    position: relative;
+}
+
+/*estilos del parrafo de descripcion*/
+.description-subtitle{
+    font-size: 4.1vmin;
+    opacity: 0.88;
+}
+
+/*estilos del logo principal*/
+.main-logo{
+    max-width: 90px;
+    margin: 0 auto;
+}
+
+.main-logo  img{
+    width: 100%;
+}
+
+/*estilos del titulo principal*/
+
+.main-title{
+    font-size: 12vmin;
+    font-weight: 500;
+    background: linear-gradient(to bottom, #FFFFFF 65%,#4e6773 100%);
+    background-clip: text;
+    opacity: 0.85;
+    color: rgba(0,0,0,0.0); /*letra transparente*/
+}
+
+/*estilos de las nubes inferiores*/
+.fog-low{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: -35%;
+    margin-bottom: -50px;
+    width: 110%;
+    opacity: .50;
+}
+
+.fog-low img{
+    width: 100%;
+}
+
+.fog-low.right{
+    margin-left: 30%;
+}
+
+/*animacion de las nubes*/
+.moving-clouds{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    width: 250.625em;
+    height: 43.75em;
+    animation: cloudLoop 80s linear infinite;
+}
+
+@keyframes cloudLoop{   
+    0%{
+        transform:translate3d(0,0,0)
+    }
+    100%{
+        transform:translate3d(-50%,0,0)
+    }
+}

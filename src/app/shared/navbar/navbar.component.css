@@ -1,7 +1,4 @@
-/*.navbar-brand{
-    color: chartreuse;
-}
-
+/*
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -10,8 +7,26 @@
 }
 */
 
-.class1{
-    color: red !important;
-    font-size: 1.2em;
+.navbar{
     text-transform: uppercase;
+}
+
+.navbar-brand{
+    font-size: 1.3em;
+}
+
+.nav-link,
+.navbar-toggler-icon
+{
+    font-size: 1.2em;
+}
+
+
+
+
+
+/*clase que se ejecute cuando se este en la pagina actual*/
+.class1,
+.navbar-toggler-icon{
+    color: white !important;
 }
