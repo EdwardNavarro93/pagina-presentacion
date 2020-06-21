@@ -1,4 +1,4 @@
-.navbar-brand{
+/*.navbar-brand{
     color: chartreuse;
 }
 
@@ -7,4 +7,11 @@
 .navbar-toggler-icon:focus {
     outline: 10px solid gold;
     box-shadow: none;
+}
+*/
+
+.class1{
+    color: red !important;
+    font-size: 1.2em;
+    text-transform: uppercase;
 }
