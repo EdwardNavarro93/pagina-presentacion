@@ -1,0 +1,86 @@
+/*estilos generales del footer*/
+.footer{
+    margin-top: 1em;
+    background-color: #0b1011;
+    color: #FFFFFF;
+}
+
+.footer-contact,
+.footer-about{
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*estilos del apartado de about*/
+.footer-about p,
+.footer-contact li{
+    font-size: 2.8vmin;
+}
+
+/*estilos del apartado de contacto*/
+.footer-contact__list{
+    display: flex;
+}
+
+.footer-contact ul{
+    width: 50%;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+.footer-contact li{
+    margin-bottom: 5px;
+}
+
+.footer-contact i{
+    margin-right: 2px;
+}
+
+.footer-contact li a{
+    text-decoration: none;
+    cursor: auto;
+    color: inherit;
+}
+
+/*estilos de los apartados de descripcion y copyright*/
+.footer-description,
+.footer-copyright{
+    text-align: center;
+}
+
+.footer-copyright{
+    margin-bottom: 1em;
+}
+
+/*estilos de los subtitulos*/
+.footer-subtitle{
+    text-align: center;
+    font-size: 4vmin;
+    border-bottom: 1px solid;
+}
+
+/*estilos de los logos*/
+.angularlogo{
+    max-width: 40px;
+
+}
+.bootstraplogo{
+    margin-left: 5px;
+    max-width: 30px;
+}
+
+@media screen and (min-width: 992px) {
+
+    .footer-contact li a:hover {
+        color: #F5593D;
+        cursor: pointer;  
+    }
+}
+
+
+
+
+
+
