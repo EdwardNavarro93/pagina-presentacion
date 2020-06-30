@@ -1,0 +1,120 @@
+/*estilos del encabezado principal de la pagina*/
+
+.page-header-image{
+    width: 100%;
+    min-height: 72vh;
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+/*estilos de la seccion de estudios*/
+.section-studies{
+    margin: 1.5em 0;   
+}
+
+/*descripcion general*/
+.section-main-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*contenedor de la imagen de estudio*/
+.studie-container{
+    height: 400px;
+    position: relative;
+}
+
+.studie-container_img{
+    width: 65%;
+    position: absolute;
+    z-index: 100;
+}
+
+.studie-container_img.img-right{
+    right: 1em;
+}
+
+.studie-container_img.img-left{
+    left: 1em;
+}
+
+.studie-container_img img{
+    max-width: 100%;
+}
+
+
+.studie-container p{
+    width: 55%;
+    color: #f13a19;
+    border: 1px solid;
+    padding: 1.5em;
+    font-style: oblique;
+    font-size: 1.1em;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 0;
+}
+
+.studie-container .text-left{
+    left: 4em;
+}
+
+.studie-container .text-right{
+    right: 4em;
+}
+
+
+.studie-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.studie-description h3{
+    margin-bottom: 1.2em;
+}
+
+.studie-description a{
+    display: none;
+}
+
+/*estilos de los niveles de estudio*/
+.studies-levels{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.studie-level{
+    padding: 5px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+.circles{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.circle{
+    display: inline-block;
+    margin: 0 2px;
+    height: 22px;
+    width: 22px;
+    color: #f13a19;
+    padding-left: 2px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid ;
+    border-radius: 50%;
+    /*box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);*/
+}

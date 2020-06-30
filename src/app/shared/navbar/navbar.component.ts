@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
 
   constructor() {
     this.title = 'Edward Navarro'
-    this.items = ['Perfil Profesional', 'portafolio', 'contacto']
+    this.items = ['Inicio', 'Estudios', 'Portafolio', 'Contacto']
   }
 
   ngOnInit(): void {

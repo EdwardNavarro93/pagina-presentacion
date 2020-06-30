@@ -149,18 +149,7 @@
     color: #f13a19;
 }
 
-/*estilos de los botones de las tarjetas*/
-.btn-outline-danger{
-    color: #f13a19;
-    border-color: #f13a19;
-    border-width: 1px;
-    border-radius: 10px;
-}
 
-.btn-outline-danger:hover{
-    color:#FFFFFF;
-    background-color:#f13a19;
-}
 
 @media screen and (min-width: 768px) { 
     .card{
