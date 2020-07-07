@@ -1,5 +1,6 @@
 .navbar{
     text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
 }
 
 .navbar-brand{
@@ -38,7 +39,7 @@
 
 
 .bg-navbar{
-    background-color: rgba(255, 166, 0, 0.9);
+    background-color: rgba(71, 69, 63, 0.8);
 }
 .bg-transparent{
     background-color: transparent;

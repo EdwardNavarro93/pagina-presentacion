@@ -10,6 +10,11 @@
     display: flex;
 }
 
+.top-image,
+.sub-image{
+    box-shadow: 3px 3px 4px 3px rgba(83, 77, 77, 0.65);
+}
+
 .sub-image{
     width: 500px;
     height: 250px;
@@ -46,6 +51,11 @@
     margin-bottom: 1em;
 }
 
+
+.iot-image{
+    box-shadow: 3px 3px 4px 3px rgba(83, 77, 77, 0.65);
+}
+
 .iot-image img{
     max-width: 100%;
 }
@@ -71,12 +81,18 @@
     padding: 1em;
     border-radius: 5px;
     border: 1px solid rgba(228, 111, 15, 0.7);
+    box-shadow: 1px 1px 4px 1px rgba(228, 111, 15, 0.55);
 }
 
 .contact-profile-container{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    font-size: 1em;
+}
+
+.contact-profile-container i{
+    color: #fd7f08f1;
 }
 
 @media screen and (min-width: 768px) { 

@@ -91,7 +91,8 @@
 
 /*estilos de las tarjetas*/
 .card{
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 5px 1px rgba(126, 117, 117, 0.6);
 }
 
 .card-body{

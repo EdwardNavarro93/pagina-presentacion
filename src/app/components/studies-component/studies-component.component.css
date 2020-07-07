@@ -23,6 +23,14 @@
     max-width: 100%;
 }
 
+.studie_img.img-right{
+    box-shadow: 3px 3px 4px 3px rgba(83, 77, 77, 0.65);
+}
+
+.studie_img.img-left{
+    box-shadow: -3px 3px 4px 3px rgba(83, 77, 77, 0.65);
+}
+
 .img-right{
     right: 1em;
 }
