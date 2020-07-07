@@ -1,53 +1,38 @@
-/*estilos del encabezado principal de la pagina*/
-
-.page-header-image{
-    width: 100%;
+.page-header{
     min-height: 72vh;
-    background-size: cover;
-    background-position: bottom;
-    overflow: hidden;
-    margin-bottom: 1em;
 }
 
-/*estilos de la seccion de estudios*/
-.section-studies{
-    margin: 1.5em 0;   
+.studies_subsection,
+.studies_subsubsection{
+    margin-bottom: 1.5em;
 }
 
-/*descripcion general*/
-.section-main-description{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/*contenedor de la imagen de estudio*/
-.studie-container{
+/*estilos del contenedor de la imagen de los estudios*/
+.studie-img-container{
     height: 400px;
     position: relative;
 }
 
-.studie-container_img{
+.studie_img{
     width: 65%;
     position: absolute;
     z-index: 100;
 }
 
-.studie-container_img.img-right{
-    right: 1em;
-}
-
-.studie-container_img.img-left{
-    left: 1em;
-}
-
-.studie-container_img img{
+.studie_img img{
     max-width: 100%;
 }
 
+.img-right{
+    right: 1em;
+}
 
-.studie-container p{
+.img-left{
+    left: 1em;
+}
+
+/*estudios de las etiquetas que acompañan la imagen*/
+.studie_tag{
     width: 55%;
     color: #f13a19;
     border: 1px solid;
@@ -59,15 +44,15 @@
     bottom: 0;
 }
 
-.studie-container .text-left{
+.text-left{
     left: 4em;
 }
 
-.studie-container .text-right{
+.text-right{
     right: 4em;
 }
 
-
+/*estilos de la descripcion de cada estudio*/
 .studie-description{
     display: flex;
     flex-direction: column;
@@ -75,29 +60,39 @@
     align-items: center;
 }
 
-.studie-description h3{
-    margin-bottom: 1.2em;
-}
-
-.studie-description a{
-    display: none;
+.studie-title{
+    margin-bottom: 0.8em;
 }
 
 /*estilos de los niveles de estudio*/
 .studies-levels{
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 15px;
+    flex-direction: column;
+    width: 100%;
+
 }
 
 .studie-level{
+    width: 100%;
     padding: 5px;
-    width: 50%;
     display: flex;
+    font-size: 1em;
     align-items: center;
     justify-content: space-between;
-    font-size: 1em;
 }
+
+
+@media screen and (min-width: 992px) { 
+    .studies-levels{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+
+    .studie-level{
+        width: 50%;
+    }
+ }
 
 .circles{
     display: flex;
@@ -117,4 +112,9 @@
     border: 1px solid ;
     border-radius: 50%;
     /*box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);*/
+}
+
+/*link que muestra los certificados*/
+.studie-description a{
+    display: none;
 }

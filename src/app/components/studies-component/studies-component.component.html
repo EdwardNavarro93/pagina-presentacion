@@ -1,104 +1,69 @@
-<div class="page-header-image" style="background-image: url('assets/img/universidad3.jpg');"></div>
-
+<div class="page-header" style="background-image: url('assets/img/universidad3.jpg');"></div>
 
 <div class="container">
-    <div class="section-studies">
+    <div class="section">
+
         <div class="row">
-            <div class="section-main-description col">
-                <h1>Mis estudios</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quibusdam quaerat debitis aperiam voluptatibus, qui magnam optio impedit accusamus libero corrupti minima est repellendus ut saepe quisquam id pariatur tenetur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem delectus officiis sunt, culpa facilis quod quos laudantium nisi maxime modi?</p>
+            <div class="section-description col">
+                <h1 class="section-description__title">Mis estudios</h1>
+                <p class="section-description__paragph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quibusdam quaerat debitis aperiam voluptatibus, qui magnam optio impedit accusamus libero corrupti minima est repellendus ut saepe quisquam id pariatur tenetur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem delectus officiis sunt, culpa facilis quod quos laudantium nisi maxime modi?</p>
             </div>
         </div>
 
-        <div class="row mt-3 mb-3">
-            <div class="studie-container d-none d-md-block col-md-6">
-                <div class="studie-container_img img-right">
-                    <img src="assets/img/bg3.jpg" alt="">
-                </div>
-                <p class="text-left">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam aliquam libero asperiores recusandae"</p>
-            </div>
+        <div class="studies_subsection">
 
-            <div id="studie1" class="studie-description col-sm-12 col-md-6">
-                <h3>Estudio 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, distinctio ullam! Saepe facere perspiciatis eaque dicta non quasi unde veniam.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias alias eius quaerat? Quam quo dolore magnam tempora molestiae mollitia tempore dolores sed laboriosam neque, voluptatibus architecto quibusdam, id commodi. Facere!</p>
-                
-                <div class="studies-levels">
-                    <div class="studie-level" *ngFor="let studie of studie1; let indice = index">
-                        <span>{{studie1[indice].name}}</span> 
-                        <div class="circles"> 
-                            <span class="circle" *ngFor="let level of studie1[indice].level; let subindice=index" [ngStyle]="{'background-color': level? '#f13a19': 'transparent', 'color': level? '#FFFFFF': '#f13a19'}">{{subindice+1}}</span>
-                        </div>                         
+            <div class="studies_subsubsection row">
+                <div class="studie-img-container d-none d-md-block col-md-6">
+                    <div class="studie_img img-right">
+                        <img src="assets/img/bg3.jpg" alt="">
                     </div>
+                    <p class="studie_tag text-left">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam aliquam libero asperiores recusandae"</p>
                 </div>
 
-                <button  class="btn btn-outline-danger" (click)="showCertifications($event)">Ver Certificaciones</button>
-                <a class="btn btn-outline-danger" target="_blank">Ver Certificaciones</a>
-            </div>
-        </div>
-
-        <div class="row mt-3 mb-3">
-            
-            <div id="studie2" class="studie-description col-sm-12 col-md-6">
-                <h3>Estudio 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, distinctio ullam! Saepe facere perspiciatis eaque dicta non quasi unde veniam.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias alias eius quaerat? Quam quo dolore magnam tempora molestiae mollitia tempore dolores sed laboriosam neque, voluptatibus architecto quibusdam, id commodi. Facere!</p>
-
-                <div class="studies-levels ">
-                    <div class="studie-level" *ngFor="let studie of studie2; let indice = index">
-                        <span>{{studie2[indice].name}}</span> 
-                        <div class="circles"> 
-                            <span class="circle" *ngFor="let level of studie2[indice].level; let subindice=index" [ngStyle]="{'background-color': level? '#f13a19': 'transparent', 'color': level? '#FFFFFF': '#f13a19'}">{{subindice+1}}</span>
-                        </div>                         
+                <div id="studie1" class="studie-description col-sm-12 col-md-6">
+                    <h3 class="studie-title">Estudio 1</h3>
+                    <p class="studie-paragph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias alias eius quaerat? Quam quo dolore magnam tempora molestiae mollitia tempore dolores sed laboriosam neque, voluptatibus architecto quibusdam, id commodi. Facere!</p>
+                        
+                    <div class="studies-levels">
+                        <div class="studie-level" *ngFor="let studie of studie1; let indice = index">
+                            <span>{{studie1[indice].name}}</span> 
+                            <div class="circles"> 
+                                <span class="circle" *ngFor="let level of studie1[indice].level; let subindice=index" [ngStyle]="{'background-color': level? '#f13a19': 'transparent', 'color': level? '#FFFFFF': '#f13a19'}">{{subindice+1}}</span>
+                            </div>                         
+                        </div>
                     </div>
+        
+                    <button  class="btn btn-outline-danger" (click)="showCertifications($event)">Ver Certificaciones</button>
+                    <a class="btn btn-outline-danger" target="_blank">Ver Certificaciones</a>
                 </div>
-
-                <button  class="btn btn-outline-danger" (click)="showCertifications($event)">Ver Certificaciones</button>
-                <a class="btn btn-outline-danger" target="_blank">Ver Certificaciones</a>
             </div>
 
-            <div class="studie-container d-none d-md-block col-md-6">
-                <div class="studie-container_img img-left">
-                    <img src="assets/img/bg3.jpg" alt="">
-                </div>
-                <p class="text-right">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam aliquam libero asperiores recusandae"</p>
-            </div>
-
-        </div>
-
-        <div class="row mt-3 mb-3">
-            <div class="studie-container d-none d-md-block col-md-6">
-                <div class="studie-container_img img-right">
-                    <img src="assets/img/bg3.jpg" alt="">
-                </div>
-                <p class="text-left">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam aliquam libero asperiores recusandae"</p>
-            </div>
-
-            <div id="studie3" class="studie-description col-sm-12 col-md-6">
-                <h3>Estudio 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, distinctio ullam! Saepe facere perspiciatis eaque dicta non quasi unde veniam.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias alias eius quaerat? Quam quo dolore magnam tempora molestiae mollitia tempore dolores sed laboriosam neque, voluptatibus architecto quibusdam, id commodi. Facere!</p>
-
-                <div class="studies-levels ">
-                    <div class="studie-level" *ngFor="let studie of studie2; let indice = index">
-                        <span>{{studie2[indice].name}}</span> 
-                        <div class="circles"> 
-                            <span class="circle" *ngFor="let level of studie2[indice].level; let subindice=index" [ngStyle]="{'background-color': level? '#f13a19': 'transparent', 'color': level? '#FFFFFF': '#f13a19'}">{{subindice+1}}</span>
-                        </div>                         
+            <div class="studies_subsubsection row">
+                <div id="studie2" class="studie-description col-sm-12 col-md-6">
+                    <h3 class="studie-title">Estudio 1</h3>
+                    <p class="studie-paragph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias alias eius quaerat? Quam quo dolore magnam tempora molestiae mollitia tempore dolores sed laboriosam neque, voluptatibus architecto quibusdam, id commodi. Facere!</p>
+                        
+                    <div class="studies-levels">
+                        <div class="studie-level" *ngFor="let studie of studie2; let indice = index">
+                            <span>{{studie2[indice].name}}</span> 
+                            <div class="circles"> 
+                                <span class="circle" *ngFor="let level of studie2[indice].level; let subindice=index" [ngStyle]="{'background-color': level? '#f13a19': 'transparent', 'color': level? '#FFFFFF': '#f13a19'}">{{subindice+1}}</span>
+                            </div>                         
+                        </div>
                     </div>
+        
+                    <button  class="btn btn-outline-danger" (click)="showCertifications($event)">Ver Certificaciones</button>
+                    <a class="btn btn-outline-danger" target="_blank">Ver Certificaciones</a>
                 </div>
-
-                <button  class="btn btn-outline-danger" (click)="showCertifications($event)">Ver Certificaciones</button>
-                <a class="btn btn-outline-danger" target="_blank">Ver Certificaciones</a>
-
+                <div class="studie-img-container d-none d-md-block col-md-6">
+                    <div class="studie_img img-left">
+                        <img src="assets/img/bg3.jpg" alt="">
+                    </div>
+                    <p class="studie_tag text-right">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam aliquam libero asperiores recusandae"</p>
+                </div>
             </div>
-        </div>
-       
-    </div>
-    
-    
 
+        </div>
+
+    </div> 
 </div>
-
-
-<div class="relleno"></div>

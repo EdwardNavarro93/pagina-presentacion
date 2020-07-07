@@ -1,15 +1,12 @@
-/*estilos del encabezado principal de la pagina*/
+/*estilos del encabezado principal de las paginas*/
 .page-header{
-    background-position: center center;
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
     min-height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     color: azure;
+    background-position: center center;
 }
 
 /*estilos del contenedor del titulo principal*/
@@ -21,9 +18,7 @@
 
 .title-brand{
     max-width: 730px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 12%;
+    margin: 12% auto 0;
     position: relative;
 }
 
@@ -94,45 +89,7 @@
 }
 
 
-/*estilos de la seccion principal*/
-.main{
-    margin-top: 1.5em;
-}
-
-.section{
-    margin-bottom: 1em;
-}
-.section-description{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.profile-picture{
-    margin: 1em 0;
-    max-width: 160px;
-    max-height: 160px;
-    min-width: 100px;
-    min-height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.profile-picture img{
-    max-width: 100%;
-}
-
-.section-description h2{
-    font-size: 5vmin;
-}
-
-.section-description p{
-    width: 65%;
-    font-size: 2.8vmin;
-}
-
 /*estilos de las tarjetas*/
-
 .card{
     margin-bottom: 0.5em;
 }
@@ -141,7 +98,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .card-body .icon{
