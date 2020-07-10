@@ -1,20 +1,27 @@
 <div class="row">
     <div class="section-description col">
         <h1 class="section-description__title">Mi Portafolio</h1>
-        <p class="section-description__paragph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quibusdam quaerat debitis aperiam voluptatibus, qui magnam optio impedit accusamus libero corrupti minima est repellendus ut saepe quisquam id pariatur tenetur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem delectus officiis sunt, culpa facilis quod quos laudantium nisi maxime modi?</p>
+        <p class="section-description__paragph">A lo largo de mi carrera profesional he trabajado en una serie de proyectos individuales y en equipo que considero me han dado experiencia en el campo laboral. La mayoría de ellos han sido en escenarios académicos, sin embargo, he trabajado en proyectos en conjunto con algunas empresas del sector de las telecomunicaciones, tal como se describe a continuación:</p>
     </div>
 </div>
 <div class="row mt-3 mb-3 d-flex flex-column align-items-center">
-    <div (click)="showPortfolio1()" class="image-container col">
-        <div class="image-portfolio">
-            <img src="assets/img/bg3.jpg" alt="">
+    <h2 class="mb-4">Proyecto SigFox</h2>
+    <div class="col">
+        <div  class="row image-container" >
+            <div  (click)="showPortfolio1()" class="image-portfolio col-12">
+                <img src="assets/img/sigfox.png" alt="">
+            </div>
+    
+            <div class="image-text col-12">
+                <p>SigFox es una red de acceso inalámbrico global de largo alcance dedicada exclusivamente a la interconexión masiva de dispositivos de internet de las cosas. En esta empresa se desarrolló una herramienta software en conjunto con la Universidad del Cauca y la empresa WND, la cual sirve en el proceso de planificación de la red SigFox en el país.
+                </p>
+                <button (click)="showPortfolio1()" type="button" class="btn btn-outline-danger w-25">Ver más</button>
+            </div> 
+
         </div>
-        <div class="image-text">
-            <h3>Portafolio 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, distinctio ullam! Saepe facere perspiciatis eaque dicta non quasi unde veniam.</p>
-        </div> 
+
+        
     </div>
-    <a class="btn btn-outline-danger w-25 mt-3 d-block d-md-none" routerLink="/portfolio/iot">ver mas</a>
 </div>
 
 

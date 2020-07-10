@@ -4,6 +4,7 @@
 
 .studies_subsection,
 .studies_subsubsection{
+    margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
 
@@ -13,35 +14,38 @@
     position: relative;
 }
 
-.studie_img{
-    width: 65%;
+.studie_img_engineer,
+.studie_img_comunication,
+.studie_img_software{
+    width: 73%;
     position: absolute;
     z-index: 100;
 }
 
-.studie_img img{
+.studie_img_engineer{    
+    top: 50px;
+}
+
+.studie_img_comunication{
+    top: 20px;
+}
+
+.studie_img_software{
+    top: 45px;
+}
+
+.studie_img_engineer img,
+.studie_img_comunication img,
+.studie_img_software img{
     max-width: 100%;
 }
 
-.studie_img.img-right{
-    box-shadow: 3px 3px 4px 3px rgba(83, 77, 77, 0.65);
-}
-
-.studie_img.img-left{
-    box-shadow: -3px 3px 4px 3px rgba(83, 77, 77, 0.65);
-}
-
-.img-right{
-    right: 1em;
-}
-
-.img-left{
-    left: 1em;
-}
 
 /*estudios de las etiquetas que acompañan la imagen*/
-.studie_tag{
-    width: 55%;
+.studie_tag_engineer,
+.studie_tag_comunication,
+.studie_tag_software{
+    width: 70%;
     color: #f13a19;
     border: 1px solid;
     padding: 1.5em;
@@ -49,7 +53,19 @@
     font-size: 1.1em;
     opacity: 0.75;
     position: absolute;
-    bottom: 0;
+    
+}
+
+.studie_tag_engineer{
+    bottom: 60px;
+}
+
+.studie_tag_comunication{
+    bottom: 25px;
+}
+
+.studie_tag_software{
+    bottom: 50px;
 }
 
 .text-left{
@@ -58,6 +74,16 @@
 
 .text-right{
     right: 4em;
+}
+
+.img-right{
+    right: 1em;
+    box-shadow: 3px 3px 4px 3px rgba(83, 77, 77, 0.65);
+}
+
+.img-left{
+    left: 1em;
+    box-shadow: -3px 3px 4px 3px rgba(83, 77, 77, 0.65);
 }
 
 /*estilos de la descripcion de cada estudio*/
@@ -69,7 +95,20 @@
 }
 
 .studie-title{
+    font-size: 5vmin;
     margin-bottom: 0.8em;
+}
+
+.studie-paragph{
+    font-size: 3.5vmin;
+    font-weight: 320;
+}
+
+@media screen and (min-width: 768px) {
+    .studie-paragph{
+        font-size: 3.1vmin;
+    } 
+
 }
 
 /*estilos de los niveles de estudio*/
@@ -77,14 +116,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
 }
 
 .studie-level{
     width: 100%;
     padding: 5px;
     display: flex;
-    font-size: 1em;
+    font-size: 2.9vmin;
+    font-weight: 320;
     align-items: center;
     justify-content: space-between;
 }
@@ -92,14 +131,12 @@
 
 @media screen and (min-width: 992px) { 
     .studies-levels{
-        flex-direction: row;
-        flex-wrap: wrap;
         margin-bottom: 15px;
     }
+ }
 
-    .studie-level{
-        width: 50%;
-    }
+ .btn{
+     margin-top: 10px;
  }
 
 .circles{

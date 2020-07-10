@@ -12,4 +12,13 @@ export class IotComponentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showArticle(e){
+    fetch('assets/pdfs/articulo.pdf')
+    .then(res => res.blob())
+    .then(pdf => {
+      e.target.nextElementSibling.href = URL.createObjectURL(pdf)
+      e.target.nextElementSibling.click()
+    })
+  }
+
 }

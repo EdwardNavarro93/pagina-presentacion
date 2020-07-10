@@ -1,7 +1,12 @@
 <div class="row">
     <div class="section-main-description col">
-        <h1 class="section-description__title">Proyecto de Internet de las Cosas</h1>
-        <p class="section-description__paragph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quibusdam quaerat debitis aperiam voluptatibus, qui magnam optio impedit accusamus libero corrupti minima est repellendus ut saepe quisquam id pariatur tenetur! Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <h1 class="section-description__title">Proyecto SigFox</h1>
+        <p class="section-description__paragph">SigFox es una empresa que ha desplegado una red de acceso inalámbrico global de largo alcance de tipo LPWAN dedicada a IoT, esta red se ha convertido en una opción muy importante en el mundo de las aplicaciones IoT masivas, tanto por la facilidad de interconectar dispositivos IoT, como por su rápido crecimiento y aceptación en el mercado. 
+        En Colombia SigFox trabaja conjuntamente con el grupo WND Colombia para construir un ecosistema solido de IoT en el pais. Especificamente WND Colombia se encarga de la planificación, despliegue, operación y administración del ecosistema SigFox en todo el territorio Colombiano. Con WND Colombia se desarrolló el trabajo de grado en ingeniería electrónica y telecomunicaciones en modalidad de práctica profesional, por un tiempo de 12 meses (desde Diciembre de 2018 hasta Diciembre de 2019), desempeñando el cargo de:</p>
+
+        <p class="section-description__paragph">
+        Ingeniero de soporte en el proceso general de planificación de la red SigFox, desarrollando una herramienta software que permite la estimación de cobertura radioeléctrica de las Estaciones Base que hacen parte de la red SigFox, en diferentes escenarios urbanos y rurales de Colombia. 
+        </p>
     </div>
 </div>
 
@@ -9,75 +14,103 @@
     <div class="image-container col">
         <div class="iot-images-container">
 
-            <div class="top-image d-none d-md-block" style="background-image: url('assets/img/ruralpop.png');"></div>
+            <div class="top-image d-none d-md-block" style="background-image: url('assets/img/urbanocali.png');"></div>
             <div class="sub-image" style="background-image: url('assets/img/urbanopop.png');"></div>
 
         </div>
     </div>
 </div>
 
-<h3 class="subtitle">Estudio 1</h3>
 <div class="row">
+    <div class=" section-main-description col">
+        <h2 class="section-description__title">Descripción del Funcionamiento de la Herramienta</h2>
+        <p class="section-description__paragph">La herramienta permite realizar dos procesos independientes
+            de planificación radio. El primer proceso consiste en la creación de perfiles de terreno entre
+            una BS de SigFox y un dispositivo IoT, lo que permite al usuario establecer radioenlaces
+            punto a punto y/o analizar puntos críticos de cobertura. El segundo proceso consiste en la
+            creación de mapas de cobertura teóricos alrededor de una BS de SigFox, lo que permite al
+            usuario visualizar el área geográfica en donde puede desplegar los servicios de SigFox. Ambos procesos fueron diseñados para funcionar tanto en escenarios rurales como urbanos y están
+            desarrollados bajo el lenguaje de programación python</p>
+    </div>
+</div>
+
+<h3 class="subtitle">Generación de perfiles de terreno</h3>
+<div class="row subsection">
     
-    <div class="iot-description col-12 col-md-7">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, distinctio ullam! Saepe facere perspiciatis eaque dicta non quasi unde veniam.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias alias eius quaerat? Quam quo dolore magnam tempora molestiae mollitia tempore dolores sed laboriosam neque, voluptatibus architecto quibusdam, id commodi. Facere!</p>
+    <div class="section-description__paragph col-12">
+        <p>La herramienta permite la representación de perfiles de terreno entre dos puntos a partir de la
+            información topográfica cargada por el usuario. Este proceso permite determinar obstáculos
+            existentes en el radioenlace y calcular mediante principios básicos de propagación, el nivel de potencia en recepción.
+        </p>
     </div>
 
-    <div class="col-12 col-md-5">
-        <div class="iot-image">
-            <img src="assets/img/bg3.jpg" alt="">
+    <div class="iot-image-profile">
+        <img src="assets/img/perfilcompleto.png" alt="">
+    </div>
+    
+</div>
+
+<h3 class="subtitle">Generación de zonas de cobertura
+</h3>
+<div class="row subsection">
+    <div class="section-description__paragph col-12">
+        <p>La herramienta de predicción de cobertura permite obtener mapas de cobertura teórica en
+            torno a las BSs de SigFox a partir de la información topográfica cargada por el usuario
+            y los parámetros radioeléctricos particulares de las BSs y los dispositivos IoT asociados.El cálculo se realiza utilizando diferentes modelos de propagación, cuyos parámetros
+            pueden ser modificados por el usuario, dependiendo del escenario de propagación que
+            se está considerando. La cobertura se estima utilizando parámetros de transmisión del
+            dispositivo IoT (debido a que es el que transmite la mayor parte del tiempo) y se visualiza
+            como la cobertura brindada por la BS.</p>
+    </div>
+
+    <div class="row images-coverage">
+        <div class="iot-image-coverage">
+            <img src="assets/img/coberturaruralpop.png" alt="">
         </div>
+        <div class="iot-image-coverage2">
+            <img src="assets/img/coberturaconjunta.png" alt="">
+        </div>
+    </div>
+
+    <div class="row mt-4 mb-4">
+        <button  class="btn btn-outline-danger " (click)="showArticle($event)">Ver Articulo Científico</button>
+        <a class="btn btn-outline-danger d-none" target="_blank">Ver Articulo</a>
     </div>
 </div>
 
-<h3 class="subtitle">Estudio 1</h3>
-<div class="row">
-
-    <div class="iot-description col-12 col-md-7">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, distinctio ullam! Saepe facere perspiciatis eaque dicta non quasi unde veniam.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias alias eius quaerat? Quam quo dolore magnam tempora molestiae mollitia tempore dolores sed laboriosam neque, voluptatibus architecto quibusdam, id commodi. Facere!</p>
-    </div>
-
-    <div class="col-12 col-md-5">
-        <div class="iot-image">
-            <img src="assets/img/bg3.jpg" alt="">
-        </div>
-    </div>
-</div>
 
 
-
-<h3 class="subtitle">Personas Involucradas</h3>
+<h2 class="subtitle">Asesores del Proyecto</h2>
 <div class="row">
     <div class="col-12 col-md profile-container">
-        <div class="profile-picture">
+        <!--<div class="profile-picture">
             <img src="assets/img/perfil.png" alt="" >
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores incidunt odio harum sequi labore! Nulla, ducimus aperiam accusantium minima sed ea quae officia!</p>
+        </div> -->
+        <h3>Victor Quintero</h3>
+        <p>Docente Facultad de Ingeniería Electrónica y Telecomunicaciones de la Universidad del Cauca
+            </p>
         <div class="contact-profile-container">
-            <span> <i class="fas fa-at"></i> asdasdasd</span>
-            <span><i class="fab fa-whatsapp"></i> aksjsdljal</span>     
+            <span><i class="fab fa-whatsapp"></i>(+57) 302 3690370</span>     
         </div>
     </div>
     <div class="col-12 col-md profile-container">
-        <div class="profile-picture">
+        <!--<div class="profile-picture">
             <img src="assets/img/perfil.png" alt="" >
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores incidunt odio harum sequi labore! Nulla, ducimus aperiam accusantium minima sed ea quae officia!</p>
+        </div>-->
+        <h3>Carolina Campo</h3>
+        <p>CEO y Cofundadora de la empresa WND Colombia</p>
         <div class="contact-profile-container">
-            <span> <i class="fas fa-at"></i> asdasdasd</span>
-            <span><i class="fab fa-whatsapp"></i> aksjsdljal</span>     
+            <span><i class="fab fa-whatsapp"></i>(+57) 317 7159748</span>     
         </div>
     </div>
     <div class="col-12 col-md profile-container">
-        <div class="profile-picture">
+        <!--<div class="profile-picture">
             <img src="assets/img/perfil.png" alt="" >
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores incidunt odio harum sequi labore! Nulla, ducimus aperiam accusantium minima sed ea quae officia!</p>
+        </div>-->
+        <h3>Guillaume Leblanc</h3>
+        <p>CTO Y Cofundador de la empresa WND Colombia</p>
         <div class="contact-profile-container">
-            <span> <i class="fas fa-at"></i> asdasdasd</span>
-            <span><i class="fab fa-whatsapp"></i> aksjsdljal</span>     
+            <span><i class="fab fa-whatsapp"></i>(+57) 300 3801147</span>     
         </div>
     </div>
 </div>

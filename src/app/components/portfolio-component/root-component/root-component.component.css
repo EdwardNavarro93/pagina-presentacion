@@ -2,69 +2,74 @@
 /*estilos de las imagenes para los portafolios*/
 .image-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    
 }
 
 .image-portfolio{
-    width: 420px;
-    height: 280px;
+    width: 400px;
+    height: 220px;
+}
+
+.image-text{
+    width: 100%;
+    font-size: 3.8vmin;
+    font-weight: 320;
 }
 
 .image-container img{
     max-width: 100%;
-    position: relative;
-    transition: transform 0.5s;
-    z-index: 100;
     box-shadow: 3px 3px 4px 3px rgba(83, 77, 77, 0.65);
+    background-color: #ffffff;
+    margin-bottom: 20px;
 }
 
 .image-text{
-    position: absolute;
-    color: #ffffff;
-    width: 50%;
-    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
 }
 
-@media (min-width: 768px) {
+.image-text button{
+    margin-left: auto;
+    margin-right: auto;
+}
 
+@media screen and (min-width: 992px){
     .image-container{
-        cursor: pointer;
+        position: relative;
+        margin: 10px 10px 40px;
     }
 
-    .image-container img,
-    .image-text
-    {
-        transition: transform 0.6s;
+    .image-container img{ 
+        cursor: pointer;
+        position: relative;
+        z-index: 100;
+        transition: transform 0.5s;
+    }
+
+    .image-portfolio,
+    .image-text{
+        width: 500px;
+        height: 260px;
     }
 
     .image-text{
-        width: 40%;
+        opacity: 0;
+        position: absolute;
+        font-size: 3vmin;
+        transition: opacity 0.2s;
+        transition: transform 0.5s;
     }
-    .image-text h3{
-        text-align: center;
-    }
-
-    .image-text p{
-        display: none;
-    }
-
+    /*efecto que ocurre solo para pantallas grandes*/
     .image-container:hover img{
-        transform: scale(0.8) translateX(-52%);
+        transform: scale(0.8) translateX(-72%);
     }
     
     .image-container:hover .image-text{
-        z-index: 0;
-        display: block;
-        color: black;
-        transform: translateX(60%);
+        opacity: 1;
+        transform: translateX(45%) translateY(10%);
     }
-
-    .image-container:hover .image-text p{
-        display: block;
-    }
-
-
- }
+}

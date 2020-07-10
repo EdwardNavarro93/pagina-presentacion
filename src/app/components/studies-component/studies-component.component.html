@@ -6,23 +6,17 @@
         <div class="row">
             <div class="section-description col">
                 <h1 class="section-description__title">Mis estudios</h1>
-                <p class="section-description__paragph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis quibusdam quaerat debitis aperiam voluptatibus, qui magnam optio impedit accusamus libero corrupti minima est repellendus ut saepe quisquam id pariatur tenetur! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem delectus officiis sunt, culpa facilis quod quos laudantium nisi maxime modi?</p>
+                <p class="section-description__paragph">A lo largo de mi carrera profesional he adquirido una serie de conocimientos y habilidades que considero me hacen acreedor para desempañar un buen trabajo en cualquier rama del sector de la electrónica y las telecomunicaciones. Esto puede ser corroborado gracias a los diferentes estudios certificados que he realizado, los cuales se listan a continuación:</p>
             </div>
         </div>
 
         <div class="studies_subsection">
 
             <div class="studies_subsubsection row">
-                <div class="studie-img-container d-none d-md-block col-md-6">
-                    <div class="studie_img img-right">
-                        <img src="assets/img/bg3.jpg" alt="">
-                    </div>
-                    <p class="studie_tag text-left">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam aliquam libero asperiores recusandae"</p>
-                </div>
-
-                <div id="studie1" class="studie-description col-sm-12 col-md-6">
-                    <h3 class="studie-title">Estudio 1</h3>
-                    <p class="studie-paragph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias alias eius quaerat? Quam quo dolore magnam tempora molestiae mollitia tempore dolores sed laboriosam neque, voluptatibus architecto quibusdam, id commodi. Facere!</p>
+                <div id="studie1" class="studie-description col-sm-12 col-lg-7">
+                    <h2 class="studie-title">Ingeniero Electrónico y de Telecomunicaciones</h2>
+                    <p class="studie-paragph">Al ser ingeniero en este sector, poseo un conjunto de conocimientos técnicos, tanto teóricos como prácticos, los cuales tienen por objetivo la solución de problemas de la sociedad relacionados con los campos de la Electrónica, los Sistemas de Telecomunicaciones y los Sistemas Telemáticos. Poseo conocimientos generales en áreas como:
+                    </p>
                         
                     <div class="studies-levels">
                         <div class="studie-level" *ngFor="let studie of studie1; let indice = index">
@@ -36,12 +30,25 @@
                     <button  class="btn btn-outline-danger" (click)="showCertifications($event)">Ver Certificaciones</button>
                     <a class="btn btn-outline-danger" target="_blank">Ver Certificaciones</a>
                 </div>
+                <div class="studie-img-container d-none d-lg-block col-lg-5">
+                    <div class="studie_img_engineer img-left">
+                        <img src="assets/img/ingenieria.jpg" alt="">
+                    </div>
+                    <p class="studie_tag_engineer text-right">"Los científicos estudian el mundo tal como es; los ingenieros crean el mundo que nunca ha sido"</p>
+                </div>
             </div>
 
             <div class="studies_subsubsection row">
-                <div id="studie2" class="studie-description col-sm-12 col-md-6">
-                    <h3 class="studie-title">Estudio 1</h3>
-                    <p class="studie-paragph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias alias eius quaerat? Quam quo dolore magnam tempora molestiae mollitia tempore dolores sed laboriosam neque, voluptatibus architecto quibusdam, id commodi. Facere!</p>
+                <div class="studie-img-container d-none d-lg-block col-lg-5">
+                    <div class="studie_img_comunication img-right">
+                        <img src="assets/img/telecomunicaciones.jpg" alt="">
+                    </div>
+                    <p class="studie_tag_comunication text-left">"las tecnologías de comunicación deben servir para mejorar el nivel de vida de todos los seres que compartimos este mundo."</p>
+                </div>
+
+                <div id="studie2" class="studie-description col-sm-12 col-lg-7">
+                    <h2 class="studie-title">Énfasis en Telecomunicaciones</h2>
+                    <p class="studie-paragph">Al tener énfasis en el sector de las telecomunicaciones, poseo las cualidades necesarias para brindar a la sociedad la posibilidad de contar con aplicaciones, servicios e infraestructura tecnológica que suplan sus necesidades de comunicación e intercambio de información.  Poseo conocimientos generales en áreas como: </p>
                         
                     <div class="studies-levels">
                         <div class="studie-level" *ngFor="let studie of studie2; let indice = index">
@@ -55,13 +62,35 @@
                     <button  class="btn btn-outline-danger" (click)="showCertifications($event)">Ver Certificaciones</button>
                     <a class="btn btn-outline-danger" target="_blank">Ver Certificaciones</a>
                 </div>
-                <div class="studie-img-container d-none d-md-block col-md-6">
-                    <div class="studie_img img-left">
-                        <img src="assets/img/bg3.jpg" alt="">
+            </div>
+
+            <div class="studies_subsubsection row">
+                <div id="studie3" class="studie-description col-sm-12 col-lg-7">
+                    <h2 class="studie-title">Desarrollador de Software</h2>
+                    <p class="studie-paragph">A pesar de no poseer un titulo formal en esta materia. Me considero a mi mismo capaz de concebir y elaborar diferentes sistemas informáticos, así como de implementarlos y ponerlos a punto, utilizando uno o varios lenguajes de programación. Esto debido a que lo a lo largo de mi carrera he trabajado con varios de estos sistemas y por lo tanto poseo conocimientos en áreas como: 
+                    </p>
+                        
+                    <div class="studies-levels">
+                        <div class="studie-level" *ngFor="let studie of studie3; let indice = index">
+                            <span>{{studie3[indice].name}}</span> 
+                            <div class="circles"> 
+                                <span class="circle" *ngFor="let level of studie3[indice].level; let subindice=index" [ngStyle]="{'background-color': level? '#f13a19': 'transparent', 'color': level? '#FFFFFF': '#f13a19'}">{{subindice+1}}</span>
+                            </div>                         
+                        </div>
                     </div>
-                    <p class="studie_tag text-right">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam aliquam libero asperiores recusandae"</p>
+        
+                    <button  class="btn btn-outline-danger" (click)="showCertifications($event)">Ver Certificaciones</button>
+                    <a class="btn btn-outline-danger" target="_blank">Ver Certificaciones</a>
+                </div>
+                <div class="studie-img-container d-none d-lg-block col-lg-5">
+                    <div class="studie_img_software img-left">
+                        <img src="assets/img/software.jpg" alt="">
+                    </div>
+                    <p class="studie_tag_software text-right">"Las cosas no tiene que cambiar al mundo para ser importantes"</p>
                 </div>
             </div>
+
+            
 
         </div>
 

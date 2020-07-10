@@ -15,6 +15,7 @@
     box-shadow: 3px 3px 4px 3px rgba(83, 77, 77, 0.65);
 }
 
+.top-image,
 .sub-image{
     width: 500px;
     height: 250px;
@@ -48,51 +49,95 @@
 /*estilos de la descripcion del proyecto iot*/
 .subtitle{
     text-align: center;
+    font-size: 5.4vmin;
     margin-bottom: 1em;
-}
-
-
-.iot-image{
-    box-shadow: 3px 3px 4px 3px rgba(83, 77, 77, 0.65);
-}
-
-.iot-image img{
-    max-width: 100%;
-}
-
-.iot-description{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .subtitle + .row{
     margin-bottom: 1em;
 }
 
+.subsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.iot-image-profile,
+.iot-image-coverage,
+.iot-image-coverage2{
+    box-shadow: 3px 3px 4px 3px rgba(83, 77, 77, 0.65);
+    margin-bottom: 20px;
+}
+
+.iot-image-profile{
+    width: 520px;
+    height: 270px;
+}
+
+@media screen and (min-width: 768px) { 
+    .iot-image-profile{
+        width: 720px;
+        height: 380px;
+    }
+ }
+
+.images-coverage{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.iot-image-coverage{
+    width: 450px;
+    height: 420px;
+}
+
+.iot-image-coverage2{
+    width: 450px;
+    height: 505px;
+}
+
+.iot-image-profile img,
+.iot-image-coverage img,
+.iot-image-coverage2 img{
+    max-width: 100%;
+}
+
+
 /*estilos de los perfiles de los involucrados en el proyecto*/
 .profile-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 0 5px 1.2em;
-    padding: 1em;
+    padding: 1em 1em 1.8em;
     border-radius: 5px;
     border: 1px solid rgba(228, 111, 15, 0.7);
     box-shadow: 1px 1px 4px 1px rgba(228, 111, 15, 0.55);
+    position: relative;
+}
+
+.profile-container p{
+    text-align: center;
+    font-size: 3.5vmin;
+    font-weight: 320;
 }
 
 .contact-profile-container{
+    position: absolute;
+    bottom: 5px;
     width: 100%;
+    font-size: 19px;
+    font-weight: 320;
     display: flex;
-    justify-content: space-around;
-    font-size: 1em;
+    justify-content: center;
 }
 
 .contact-profile-container i{
     color: #fd7f08f1;
+    margin-right: 5px;
 }
 
 @media screen and (min-width: 768px) { 
@@ -101,3 +146,10 @@
     }
  }
 
+
+ .btn-outline-danger{
+     width: 300px;
+     height: 50px;
+     font-size: 18px;
+     font-weight: 360;
+ }
