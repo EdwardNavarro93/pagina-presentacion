@@ -13,7 +13,7 @@ export class IotComponentComponent implements OnInit {
   }
 
   showArticle(e){
-    fetch('assets/pdfs/articulo.pdf')
+    fetch('../assets/pdfs/articulo.pdf')
     .then(res => res.blob())
     .then(pdf => {
       e.target.nextElementSibling.href = URL.createObjectURL(pdf)
