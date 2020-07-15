@@ -5,8 +5,6 @@
 }
 
 .iot-images-container{
-    width: 500px;
-    height: 250px;
     display: flex;
 }
 
@@ -15,12 +13,18 @@
     box-shadow: 3px 3px 4px 3px rgba(83, 77, 77, 0.65);
 }
 
-.top-image,
 .sub-image{
-    width: 500px;
-    height: 250px;
+    width: 320px;
+    height: 260px;
     background-size: cover;
     background-position: center;
+}
+
+@media screen and (min-width: 576px){
+    .sub-image{
+        width: 480px;
+        height: 300px;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -72,8 +76,17 @@
 }
 
 .iot-image-profile{
-    width: 520px;
-    height: 270px;
+    width: 355px;
+    height: 300px;
+}
+
+@media screen and (min-width: 576px){
+    .iot-image-profile{
+        
+        width: 480px;
+        height: 300px;
+    }
+
 }
 
 @media screen and (min-width: 768px) { 
@@ -86,18 +99,44 @@
 .images-coverage{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .iot-image-coverage{
-    width: 450px;
-    height: 420px;
+    width: 320px;
+    height: 295px;
 }
 
 .iot-image-coverage2{
-    width: 450px;
-    height: 505px;
+    width: 320px;
+    height: 355px;
 }
+
+@media screen and (min-width: 576px) {
+
+    .iot-image-coverage{
+        width: 450px;
+        height: 420px;
+    }
+    
+    .iot-image-coverage2{
+        width: 450px;
+        height: 505px;
+    }   
+
+}
+
+@media screen and (min-width: 768px){
+
+    .images-coverage{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+
 
 .iot-image-profile img,
 .iot-image-coverage img,
@@ -111,13 +150,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 5px 1.2em;
     padding: 1em 1em 1.8em;
+    margin-bottom:  1.2em;
     border-radius: 5px;
     border: 1px solid rgba(228, 111, 15, 0.7);
     box-shadow: 1px 1px 4px 1px rgba(228, 111, 15, 0.55);
     position: relative;
 }
+
 
 .profile-container p{
     text-align: center;
@@ -141,6 +181,13 @@
 }
 
 @media screen and (min-width: 768px) { 
+    .profile-container{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+ }
+
+ @media screen and (min-width: 992px){
     .profile-container{
         margin-bottom: 0;
     }
